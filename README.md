@@ -56,17 +56,18 @@ Each block is implemented as a separate VHDL module.
 
 ## Repository Structure
 
+```text
 src/
-├── SCI_Rx_final.vhd         # UART receiver
-├── lookup.vhd               # ASCII -> Morse translation
-├── Queue.vhd                # FIFO buffer
-├── Transmitter.vhd          # Morse sequencing
-├── squarewave.vhd           # 250 Hz audio tone
-└── main_shell_v3.vhd        # Top-level module
+|-- SCI_Rx_final.vhd     # UART receiver
+|-- lookup.vhd           # ASCII -> Morse translation
+|-- Queue.vhd            # FIFO buffer
+|-- Transmitter.vhd      # Morse sequencing
+|-- squarewave.vhd       # 250 Hz audio tone
+`-- main_shell_v3.vhd    # Top-level module
 
 constraints/
-└── basys3.xdc
-
+`-- basys3.xdc
+```
 ---
 
 ## Testing & Validation
