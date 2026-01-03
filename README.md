@@ -37,15 +37,7 @@ The goal of this project was to practice real-world digital system design on har
 
 ## How It Works (High Level)
 
-Terminal (PuTTY)
-↓
-UART Receiver
-↓
-Morse Code Lookup
-↓
-FIFO Queue
-↓
-Audio Tone + LED Output
+Terminal (PuTTY) -> UART Receiver -> Morse Code Lookup -> FIFO Queue -> Audio Tone + LED Output
 
 Each block is implemented as a separate VHDL module.
 
@@ -65,18 +57,15 @@ Each block is implemented as a separate VHDL module.
 ## Repository Structure
 
 src/
-SCIRx.vhd # UART receiver
-lookup.vhd # ASCII to Morse translation
-CharQueue.vhd # FIFO buffer
-transmitter.vhd # Morse sequencing
-square_wave.vhd # 250 Hz audio tone
-main_shell.vhd # Top-level module
-
-tb/
-Testbenches for each module
+├── SCI_Rx_final.vhd         # UART receiver
+├── lookup.vhd               # ASCII -> Morse translation
+├── Queue.vhd                # FIFO buffer
+├── Transmitter.vhd          # Morse sequencing
+├── squarewave.vhd           # 250 Hz audio tone
+└── main_shell_v3.vhd        # Top-level module
 
 constraints/
-basys3.xdc
+└── basys3.xdc
 
 ---
 
