@@ -2,7 +2,6 @@
 VHDL FPGA system that converts serial ASCII input into Morse code with audio and visual output
 
 # FPGA Morse Code Translator  
-**ENGS 31 / COSC 56 Final Project**
 
 **Authors:** Alyssia Salas & Atziri Enriquez
 
